@@ -7,9 +7,11 @@ public class Calculadora {
         return total;
     }
 
-    public void setTotal(double total) {
-        this.total = total;
+    public void sumar(double valor){
+        total= total+valor; 
     }
+
+   
     
 
 }
