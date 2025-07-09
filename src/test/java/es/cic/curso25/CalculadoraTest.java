@@ -23,9 +23,9 @@ public class CalculadoraTest {
         cut.restar(5.6);
 
         double valorActual = cut.getTotal();
-        assertEquals(0, valorActual, 0.00001);
+        assertEquals(-5.6, valorActual, 0.00001);
         
-        
+
     }
 
 
