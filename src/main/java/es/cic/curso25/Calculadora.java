@@ -11,7 +11,11 @@ public class Calculadora {
         total= total+valor; 
     }
 
-   
+    public void restar(double valor){
+        total= total-valor; 
+    }
+
+    
     
 
 }

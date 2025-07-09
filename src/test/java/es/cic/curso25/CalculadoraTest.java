@@ -16,4 +16,18 @@ public class CalculadoraTest {
         
 
     }
+
+    @Test
+    public void testRestar() {
+        Calculadora cut = new Calculadora();
+        cut.restar(5.6);
+
+        double valorActual = cut.getTotal();
+        assertEquals(0, valorActual, 0.00001);
+        
+        
+    }
+
+
+
 }
