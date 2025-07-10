@@ -15,6 +15,14 @@ public class Calculadora {
         total-=valor; 
     }
 
+    public void multiplicar(double valor){
+        total*=valor;
+    }
+
+    public void dividir(double valor){
+        total/=valor;
+    }
+
 
     
 

@@ -28,6 +28,27 @@ public class CalculadoraTest {
 
     }
 
+     @Test
+    public void testMultiplicar() {
+        Calculadora cut = new Calculadora();
+        cut.sumar(4);
+        cut.multiplicar(5);
 
+        double valorActual = cut.getTotal();
+        assertEquals(20, valorActual, 0.00001);
+        
+
+    }
+
+       @Test
+    public void testDividir() {
+        Calculadora cut = new Calculadora();
+        cut.sumar(4);
+        cut.dividir(2);
+
+        double valorActual = cut.getTotal();
+        assertEquals(2, valorActual, 0.00001);
+        
+    }
 
 }
