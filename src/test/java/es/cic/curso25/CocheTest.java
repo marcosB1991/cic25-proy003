@@ -1,6 +1,7 @@
 package es.cic.curso25;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -31,7 +32,14 @@ public class CocheTest {
         assertEquals(30, velocidadFinal);
     }
 
-    
+    @Test
+    void testFrenarNegativo() {
+        cut.acelerar(50);
+        assertThrows(ArithmeticException.class, () -> cut.frenar(60));
+    }
+
+
+
     @Test
     void testGetConsumo() {
         cut.acelerar(50);

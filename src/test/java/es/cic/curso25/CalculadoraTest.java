@@ -44,7 +44,7 @@ public class CalculadoraTest {
     public void testDividir1() {
         Calculadora cut = new Calculadora();
         cut.sumar(4);
-        cut.dividir(0);
+        cut.dividir(2);
 
         double valorActual = cut.getTotal();
         assertEquals(0, valorActual, 0.00001);

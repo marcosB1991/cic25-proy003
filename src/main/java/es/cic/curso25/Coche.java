@@ -34,8 +34,13 @@ public class Coche {
         this.calculadora.limpiar();
         this.calculadora.sumar(this.velocidad);
         this.calculadora.restar(decrementoVelocidad);
-        this.velocidad=(int) Math.round(calculadora.getTotal());
-        return this.velocidad;
+        int nuevaVelocidad=(int) Math.round(calculadora.getTotal());
+        if(nuevaVelocidad<0){
+            throw new ArithmeticException("Te has pasado de frenada");
+        }else{
+            this.velocidad=nuevaVelocidad;
+            return this.velocidad;
+        } 
     }
 
 }
