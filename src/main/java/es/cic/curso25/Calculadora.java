@@ -31,6 +31,11 @@ public class Calculadora {
     }
 
 
+    public void limpiar(){
+        total=0;
+    }
+
+
     
 
 }
