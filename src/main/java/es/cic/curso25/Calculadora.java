@@ -20,7 +20,14 @@ public class Calculadora {
     }
 
     public void dividir(double valor){
-        total/=valor;
+
+        if(valor==0){
+            throw new ArithmeticException("División por 0");
+        }else{
+            total/=valor;
+        }
+
+        
     }
 
 
